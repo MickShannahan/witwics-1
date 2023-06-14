@@ -6,6 +6,11 @@
 
 function largerNum(num1, num2) {
   // TODO YOUR CODE HERE
+  if (num1 > num2) {
+    return num1
+  } else {
+    return num2
+  }
 }
 
 
@@ -21,6 +26,21 @@ function largerNum(num1, num2) {
 
 function crimeGrader(successful, total) {
   // TODO YOUR CODE HERE
+  let grade = Math.round((successful / total) * 100)
+
+  // console.log(grade)
+  if (grade >= 90) {
+    return 'A'
+  }
+
+  if (grade >= 80) {
+    return 'B'
+  }
+
+  if (grade >= 70) {
+    return 'C'
+  }
+
 }
 
 
@@ -33,6 +53,21 @@ function crimeGrader(successful, total) {
 //   Make sure your ranges are inclusive
 function timeOfDay(hour) {
   // TODO YOUR CODE HERE
+  console.log(hour)
+  if (hour >= 22 || hour <= 4) {
+    return 'night'
+  }
+
+  if (hour >= 18) {
+    return 'evening'
+  }
+
+  if (hour >= 12) {
+    return 'afternoon'
+  }
+
+  return 'morning'
+
 }
 
 // Our surveillance team finds the closer we get to catching the associate the hotter the person gets, we can use this to narrow down the person

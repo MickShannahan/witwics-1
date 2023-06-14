@@ -5,12 +5,14 @@
 // Write a function that uses the addition operator to add two numbers together
 function add(x, y) {
   // TODO YOUR CODE HERE
+  return x + y
 }
 
 // Further calculations are identified through cubes
 // Write a function that returns the Cubed value of x
 function cubed(x) {
   // TODO YOUR CODE HERE
+  return x * x * x
 }
 
 
